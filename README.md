@@ -1,10 +1,10 @@
 # Multispectral Image Deblurring
 [Majed El Helou](https://majedelhelou.github.io/), Zahra Sadeghipoor, Sabine Süsstrunk
 
-Contact author: Majed El Helou
+Contact author: [Majed El Helou](https://majedelhelou.github.io/)
 
 ## Dependencies
-The code is tested on MATLAB R2016 and R2018b.
+The code is tested on MATLAB R2016b and R2018b.
 
 ## Code
 This repository contains the needed MATLAB code to run the functions of "[Correlation-Based Deblurring Leveraging Multispectral 
