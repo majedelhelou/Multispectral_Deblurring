@@ -1,8 +1,8 @@
 # Multispectral Image Deblurring
 [Majed El Helou](https://majedelhelou.github.io/), Zahra Sadeghipoor, Sabine Süsstrunk
 
-This repository contains the needed code to run the functions of "Correlation-Based Deblurring Leveraging Multispectral 
-Chromatic Aberration in Color and Near-Infrared Joint Acquisition". Simply run `DEMO_multispectral_deblur.m`, it saves intermediate 
+This repository contains the needed MATLAB code to run the functions of "[Correlation-Based Deblurring Leveraging Multispectral 
+Chromatic Aberration in Color and Near-Infrared Joint Acquisition](https://infoscience.epfl.ch/record/231919/files/CORRELATION-BASED%20DEBLURRING%20LEVERAGING%20MULTISPECTRAL%20CHROMATIC%20ABERRATION%20IN%20COLOR%20AND%20NEAR-INFRARED%20JOINT%20ACQUISITION.pdf)". Simply run `DEMO_multispectral_deblur.m`, it saves intermediate 
 results in the folder `ResultsRGBY`. To obtain the correlation maps used in the paper's correlation study, use `corr2_across_patches.m`.
 
 The code allows the deblurring of a spectral channel (red, green, blue, or NIR), given one or more other channels. This takes advantage of the chromatic aberration naturally present in captured images. The code relies on optimizations solved in the Fourier domain (see the second citation below).
