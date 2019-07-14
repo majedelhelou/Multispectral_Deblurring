@@ -2,13 +2,13 @@
 [Majed El Helou](https://majedelhelou.github.io/), Zahra Sadeghipoor, Sabine Süsstrunk
 
 This repository contains the needed code to run the functions of "Correlation-Based Deblurring Leveraging Multispectral 
-Chromatic Aberration in Color and Near-Infrared Joint Acquisition". Simply run `DEMO_multispectral_deblur`, it saves intermediate 
+Chromatic Aberration in Color and Near-Infrared Joint Acquisition". Simply run `DEMO_multispectral_deblur.m`, it saves intermediate 
 results in the folder `ResultsRGBY`. To obtain the correlation maps used in the paper's correlation study, use `corr2_across_patches.m`.
 
 The code allows the deblurring of a spectral channel (red, green, blue, or NIR), given one or more other channels. This takes advantage of the chromatic aberration naturally present in captured images. The code relies on optimizations solved in the Fourier domain (see the second citation below).
 
 The folder `Guided_Deblurring` contains the demo and code of "Multiscale Guided Deblurring: Chromatic Aberration 
-Correction in Color and Near-Infrared Imaging". Simply run `demo`.
+Correction in Color and Near-Infrared Imaging". Simply run `demo.m`.
 
 To test with different RGB-NIR image pairs, [this dataset can be downloaded](https://ivrl.epfl.ch/research-2/research-downloads/supplementary_material-cvpr11-index-html/).
 Replace inside `Guided_Deblurring` the images `rgb.tiff` and `nir.tiff`.
