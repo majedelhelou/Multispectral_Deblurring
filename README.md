@@ -1,9 +1,11 @@
-# Multispectral_Deblurring
+# Multispectral Image Deblurring
 [Majed El Helou](https://majedelhelou.github.io/), Zahra Sadeghipoor, Sabine Süsstrunk
 
 This repository contains the needed code to run the functions of "Correlation-Based Deblurring Leveraging Multispectral 
 Chromatic Aberration in Color and Near-Infrared Joint Acquisition". Simply run `DEMO_multispectral_deblur`, it saves intermediate 
 results in the folder `ResultsRGBY`. To obtain the correlation maps used in the paper's correlation study, use `corr2_across_patches.m`.
+
+The code allows the deblurring of a spectral channel (red, green, blue, or NIR), given one or more other channels. This takes advantage of the chromatic aberration naturally present in captured images. The code relies on optimizations solved in the Fourier domain (see the second citation below).
 
 The folder `Guided_Deblurring` contains the demo and code of "Multiscale Guided Deblurring: Chromatic Aberration 
 Correction in Color and Near-Infrared Imaging". Simply run `demo`.
@@ -22,6 +24,16 @@ Correlation-Based Deblurring Leveraging Multispectral Chromatic Aberration in Co
   pages={1402--1406},
   year={2017},
   organization={IEEE}
+}
+```
+
+Fourier-Domain Optimization for Image Processing:
+```
+@article{el2018fourier,
+  title={Fourier-domain optimization for image processing},
+  author={El Helou, Majed and D{\"u}mbgen, Frederike and Achanta, Radhakrishna and S{\"u}sstrunk, Sabine},
+  journal={arXiv preprint arXiv:1809.04187},
+  year={2018}
 }
 ```
 
